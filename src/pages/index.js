@@ -1,0 +1,9 @@
+export { default as LandingPage } from "./landingpage/LandingPage";
+export { default as Products } from "./Home/Home";
+export { default as Cart } from "./Cart/Cart";
+export { default as Checkout } from "./Checkout/Checkout";
+export { default as Login } from "./Auth/LogIn/Login";
+export { default as SignUp } from "./Auth/SignUp/SignUp";
+export { default as NewPassword } from "./Auth/NewPassword/NewPassword";
+export { default as ResetPassword } from "./Auth/ResetPassword/ResetPassword";
+export { default as Fashion } from "./Fashion/Fashion";

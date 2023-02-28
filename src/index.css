@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .selected-tab {
+    @apply border-b-2 border-[#3FE0D0];
+  }
+
+  .flex-all-centered {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .fullwidth-flex-center {
+    @apply w-full flex justify-center;
+  }
+
+  .AuthContentContainer {
+    @apply h-[83vh] w-full absolute left-0 top-24 px-5 flex items-center justify-center space-x-10;
+  }
+
+  .divider {
+    @apply h-[1px] flex-grow bg-gray-400;
+  }
+
+  .AuthPageTitle {
+    @apply text-xl font-medium text-[#26867B];
+  }
+
+  .AuthPageDesc {
+    @apply text-sm text-slate-500;
+  }
+
+  .footerSectionHeader {
+    @apply mb-2 text-sm font-medium;
+  }
+
+  .phoneInput input {
+    @apply w-full px-3 py-1 rounded-md border border-gray-300 outline-green-600;
+  }
+
+  .menuItems {
+    @apply text-xs font-semibold bg-gray-200 rounded-md text-center cursor-pointer py-1 mb-1 hover:bg-green-200;
+  }
+}
+
+.invisible-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+.custom-shadow {
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.3) inset;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
