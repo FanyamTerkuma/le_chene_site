@@ -13,6 +13,8 @@ import Orders from './pages/staffpages/Orders';
 import PayRoll from './pages/staffpages/PayRoll';
 import SideBar from './components/sidebar/SideBar';
 import TasksPage from './pages/staffpages/TasksPage';
+import AdminProducts from './pages/adminpages/products/AdminProducts';
+import AdminHomepage from './pages/adminpages/AdminHomepage';
 
 function App() {
 	let user = 'Helix'; // dummie user
@@ -42,15 +44,21 @@ function App() {
 		return (
 			<BrowserRouter>
 				<div className='sm:flex p-1'>
-					<SideBar />
+					{/* <SideBar /> */}
 					<div className='w-full '>
 						<Routes>
-							<Route path='/' element={<AdminHome />} />
+							temporarily commented code to work on the admin view and add pages
+							{/* <Route path='/' element={<AdminHome />} />
 							<Route path='/dashboard' element={<Dashboard />} />
 							<Route path='/tasks' element={<TasksPage />} />
 							<Route path='/progressreport' element={<ProgressReport />} />
 							<Route path='/orders' element={<Orders />} />
-							<Route path='/payroll' element={<PayRoll />} />
+							<Route path='/payroll' element={<PayRoll />} /> */}
+							<Route path='/adminpage' element={<AdminHomepage />}>
+								<Route path='' element={<AdminProducts />} />
+								<Route path='products' element={ <AdminProducts /> } />
+								
+							</Route>
 						</Routes>
 					</div>
 				</div>

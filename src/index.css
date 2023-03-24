@@ -53,7 +53,13 @@
 
   .hidden-scrollbar::-webkit-scrollbar {
     display: none;
+
   }
+
+  .hidden-scrollbar {
+    scrollbar-width: none;
+  }
+
 }
 
 body {
